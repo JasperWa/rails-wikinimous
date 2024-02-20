@@ -7,3 +7,14 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+require 'faker'
+require_relative '../app/models/article'
+
+initial_articles = 10
+
+initial_articles.times do |_|
+  title = Faker::Book.title
+  content = Faker::Quotes::Shakespeare.romeo_and_juliet_quote
+  Article.create(title:, content:)
+end
