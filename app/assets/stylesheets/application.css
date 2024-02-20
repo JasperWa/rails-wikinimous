@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+ .container-fluid {
+  display: flex;
+  align-items: center;
+ }
+
+ .nav-link {
+
+
+ }
+
+ .nav-link > a {
+  text-decoration: none;
+ }
